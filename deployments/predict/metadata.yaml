@@ -1,0 +1,19 @@
+owner: stephen@writewithneurl.com
+runtimeInfo:
+  mainFunction: predict
+  mainFunctionArgs:
+    - bloodpressure:float
+    - cholesterol:float
+    - smoker:float
+    - age:float
+    - sex:float
+    - bmi:float
+    - fruits:float
+    - alcohol:float
+    - heartattack:float
+    - activity:float
+    - return:list
+  pythonVersion: '3.10'
+  systemPackages:
+    - libgomp1
+schemaVersion: 2
