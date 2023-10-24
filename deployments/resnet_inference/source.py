@@ -22,11 +22,13 @@ def display_image(inp, predicted_label):
     inp = input_batch[0].numpy().transpose((1, 2, 0))
     inp = std * inp + mean
     inp = np.clip(inp, 0, 1)
-
+  
     plt.figure(figsize=(16,4))
-    plt.axis('off')
-    plt.imshow(inp)
     plt.title(predicted_label)
+    show = plt.imshow(inp)
+    
+    plt.axis('off')
+    return show
 
 
 # main function
