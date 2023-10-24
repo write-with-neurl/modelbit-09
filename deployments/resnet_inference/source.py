@@ -2,7 +2,6 @@ import modelbit, sys
 from typing import *
 from _io import BytesIO
 from torchvision.models.resnet import ResNet
-from torch import Tensor
 import requests
 import PIL.Image as Image
 import torchvision.transforms as transforms
@@ -12,10 +11,9 @@ import matplotlib.pyplot as plt
 import modelbit as mb
 
 resnet50 = modelbit.load_value("data/resnet50.pkl") # ResNet( (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False) (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True) (relu): ReLU(inplac...
-input_batch = modelbit.load_value("data/input_batch.pkl") # tensor([[[[-0.5938, -0.4911, -0.4568, ..., 1.4098, 1.2043, 1.5810], [-0.3198, -0.3027, -0.3369, ..., 1.2728, 1.1529, 1.5125], [-0.1828, -0.1657, -0.2684, ..., 0.8276, 0.9817, 1.2899], ..., [ 1.0673, 1...
 labels = modelbit.load_value("data/labels.pkl") # ['tench', 'goldfish', 'great white shark', 'tiger shark', 'hammerhead shark', 'electric ray', 'stingray', 'cock', 'hen', 'ostrich', 'brambling', 'goldfinch', 'house finch', 'junco', 'indigo bunting', ...
 
-def display_image(inp, predicted_label):    
+def display_image(inp, input_batch, predicted_label):    
     # De-normalize the image for display
     mean = np.array([0.485, 0.456, 0.406])
     std = np.array([0.229, 0.224, 0.225])
@@ -29,7 +27,6 @@ def display_image(inp, predicted_label):
     
     plt.axis('off')
     return fig
-    stop
 
 
 # main function
