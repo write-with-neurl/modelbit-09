@@ -23,12 +23,13 @@ def display_image(inp, predicted_label):
     inp = std * inp + mean
     inp = np.clip(inp, 0, 1)
   
-    plt.figure(figsize=(16,4))
+    fig = plt.figure(figsize=(16,4))
     plt.title(predicted_label)
-    show = plt.imshow(inp)
+    plt.imshow(inp)
     
     plt.axis('off')
-    return show
+    return fig
+    stop
 
 
 # main function
