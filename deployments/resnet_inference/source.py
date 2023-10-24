@@ -51,7 +51,7 @@ def resnet_inference(img_url):
     
     _, predicted_idx = torch.max(output, 1)
 
-    pred_img = display_image(img, predicted_label=labels[predicted_idx.item()])
+    pred_img = display_image(img, input_batch, predicted_label=labels[predicted_idx.item()])
     mb.log_image(pred_img) # show the predicted boxes on the image in modelbit logs
 
     return { "index": predicted_idx.item(), "label": labels[predicted_idx.item()]}
