@@ -1,5 +1,6 @@
 import modelbit, sys
 from typing import *
+from _io import BytesIO
 from torchvision.models.resnet import ResNet
 import requests
 import PIL.Image as Image
