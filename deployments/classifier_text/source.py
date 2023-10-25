@@ -8,9 +8,8 @@ def classifier_text(data):
     outputs = classifier_pipeline(data)
     for item in outputs:
         label = item['label']
-        score = item['score']
+        score = round(item['score'], 2)
         result_dict = {'label': label, 'score': score}  # Create a dictionary for each item
-        print(result_dict)  # Print the dictionary in the desired format
         
     return result_dict 
 
