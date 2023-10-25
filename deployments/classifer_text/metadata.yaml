@@ -1,0 +1,7 @@
+owner: stephen@writewithneurl.com
+runtimeInfo:
+  mainFunction: classifer_text
+  mainFunctionArgs:
+    - data:Any
+  pythonVersion: '3.10'
+schemaVersion: 2
