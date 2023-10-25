@@ -11,6 +11,8 @@ def classifier_text(data):
         score = item['score']
         result_dict = {'label': label, 'score': score}  # Create a dictionary for each item
         print(result_dict)  # Print the dictionary in the desired format
+        
+    return result_dict 
 
 # to run locally via git & terminal, uncomment the following lines
 # if __name__ == "__main__":
