@@ -11,10 +11,12 @@ prompt = modelbit.load_value("data/prompt.pkl") # input_variables=['num_of_words
 
 @cache
 def load_llm():
-    """ Loads the LlamaCpp model with specified model path and context size. 
-        Uses caching (`@cache`) to optimize performance by storing the result for subsequent calls.
+    """ Loads the LlamaCpp model with a specified model path and context size. 
+      Uses caching to optimize performance by storing the result for subsequent calls.
     """
-    llm = LlamaCpp(model_path=file_path, n_ctx=8191) # Load the LlamaCpp model
+    llm = LlamaCpp(model_path=file_path, n_ctx=8191,n_gpu_layers=20,
+    n_batch=20, f16_kv=True)  # Load the LlamaCpp model // context window - 8191 // batch size 20 // gpu layer offload size 20 // F16=True to enable half precision for key value cache
+
     return llm
 
 
