@@ -1,6 +1,0 @@
-https://download.pytorch.org/whl/cu118/torch-2.1.0%2Bcu118-cp310-cp310-linux_x86_64.whl
-https://download.pytorch.org/whl/cu118/torchvision-0.16.0%2Bcu118-cp310-cp310-linux_x86_64.whl
-matplotlib==3.7.1
-numpy==1.23.5
-Pillow==9.4.0
-requests==2.31.0

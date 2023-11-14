@@ -1,7 +1,0 @@
-owner: stephen@writewithneurl.com
-runtimeInfo:
-  mainFunction: resnet_inference
-  mainFunctionArgs:
-    - img_url:Any
-  pythonVersion: '3.10'
-schemaVersion: 2
