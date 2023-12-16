@@ -1,0 +1,10 @@
+_: MBFileStub
+contentHash: sha1:b42ddb45ce6b73eaa4e41364abf1d04f5a383a07
+createdAt: 2023-12-16 09:28:57
+metadata:
+  fileSize: 42
+  object:
+    class: device
+    description: device(type='cuda')
+    module: torch
+schemaVersion: 1

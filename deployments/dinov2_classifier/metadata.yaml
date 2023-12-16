@@ -1,0 +1,11 @@
+owner: stephen@writewithneurl.com
+runtimeInfo:
+  capabilities:
+    - gpu=T4
+  mainFunction: dinov2_classifier
+  mainFunctionArgs:
+    - img_url:Any
+  pythonVersion: '3.10'
+  systemPackages:
+    - git
+schemaVersion: 2
