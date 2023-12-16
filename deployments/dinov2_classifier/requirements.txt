@@ -4,3 +4,5 @@ Pillow==9.4.0
 requests==2.31.0
 torch==2.0.0+cu117
 torchvision==0.15.0+cu117
+--extra-index-url https://pypi.nvidia.com
+cuml-cu11
