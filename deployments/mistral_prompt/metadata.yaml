@@ -1,0 +1,9 @@
+owner: stephen@writewithneurl.com
+runtimeInfo:
+  capabilities:
+    - gpu=T4
+  mainFunction: mistral_prompt
+  mainFunctionArgs:
+    - prompt:Any
+  pythonVersion: '3.11'
+schemaVersion: 2
