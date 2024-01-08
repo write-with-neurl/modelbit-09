@@ -1,0 +1,9 @@
+owner: stephen@writewithneurl.com
+runtimeInfo:
+  capabilities:
+    - gpu=T4
+  mainFunction: zephyr_prompt
+  mainFunctionArgs:
+    - prompt:Any
+  pythonVersion: '3.10'
+schemaVersion: 2
