@@ -5,5 +5,5 @@ runtimeInfo:
   mainFunction: mistral_prompt
   mainFunctionArgs:
     - prompt:Any
-  pythonVersion: '3.11'
+  pythonVersion: '3.10'
 schemaVersion: 2
