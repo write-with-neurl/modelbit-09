@@ -1,10 +1,11 @@
 _: MBFileStub
-contentHash: sha1:cf9aa24461b26d4afa462398233c19e19705bb5f
-createdAt: 2024-01-15 16:52:58
+contentHash: sha1:e227f567ac788133c620c434be76233ee97fa0c7
+createdAt: 2024-01-15 17:07:11
 metadata:
-  fileSize: 4011826480
+  fileSize: 4011825000
   object:
-    class: bytes
-    description: ''
-    module: builtins
+    class: TextGenerationPipeline
+    description: <transformers.pipelines.text_generation.TextGenerationPipeline object at 0x7cfbd196f5b0>
+    module: transformers.pipelines.text_generation
+    package: transformers==4.36.2
 schemaVersion: 1
