@@ -1,0 +1,5 @@
+git+https://github.com/huggingface/transformers.git
+https://download.pytorch.org/whl/cu121/torch-2.2.1%2Bcu121-cp310-cp310-linux_x86_64.whl
+huggingface-hub==0.20.3
+Pillow==9.4.0
+requests==2.31.0
